@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&family=Poppins:wght@300&display=swap');
 
 :root{
     --color1: #0B1A2B;
@@ -14,6 +14,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Flow Circular', cursive;
+font-family: 'Poppins', sans-serif;
 }
 
 /* ---nav bar -------------------------------  */
@@ -36,7 +38,10 @@ nav{
 
 /* /intro ---------------------------- */
 .intro{
+    height: 100vh;
+    width: auto;
     display: flex;
+    padding: 0;
 }
 /* sidebar  */
 .sidebar{
@@ -45,6 +50,7 @@ nav{
     background-color: #FFFFFF;
     border-radius: 10px;
     left: 5px;
+    top: 15rem;
     box-shadow: 1px 1px 5px var(--color3);
 
 }
@@ -84,14 +90,15 @@ nav{
    padding-left: 1rem;
 }
 #searchButton{
-    width: 4rem;
+    width: 5rem;
     background: none;
     border: none;
     position: absolute;
     left: 20rem;
     color: var(--textcolor);
+    padding-right: 1rem;
+    cursor: pointer;
 }
-
   
 
 .callToAction{
@@ -99,11 +106,8 @@ nav{
   width: 100vw;
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #716262;
+  z-index: -1;
 }
-
 .callToAction button{
     background-color: var(--color1);
     color: var(--textcolor);
@@ -111,10 +115,146 @@ nav{
     width: 15rem;
     border-radius: 10px;
     font-size: x-large;
-    position: absolute;
-    bottom: 15rem;
-    left: 20rem;
+    cursor: pointer;
 }
+.callToAction button:hover{
+    background-color: ;
+}   
+
+
+.calltext{
+    position: absolute;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    top: 10rem;
+    left: 20rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+.calltext i{
+    color:var(--color2);
+}
+.calltext h6{
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+.calltext h1{
+    font-size: 4rem;
+    padding: 5px;
+    font-weight: 700;
+}
+video{
+    width: 90vw;
+    height: auto;
+}
+@media only screen and (max-width: 1200px){
+    .calltext{
+        position: absolute;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        top: 10rem;
+        left: 10rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .calltext{
+        position: absolute;
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        top: 7rem;
+        left: 8rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calltext h1{
+        font-size: 2rem;
+        padding: 5px;
+        font-weight: 900;
+    }
+    video{
+        width: 100%;
+        height: auto;
+    }
+    
+    
+}
+@media only screen and (max-width: 700px){
+    .calltext{
+        position: absolute;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        top: 5rem;
+        left: 6rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calltext h1{
+        font-size: 2rem;
+        padding: 5px;
+        font-weight: 900;
+    } 
+    video{
+        width: 80%;
+        height: auto;
+    }
+    .intro{
+        height: 80vh;
+        width: auto;
+        display: flex;
+        padding: 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 569px){
+    .calltext{
+        position: absolute;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        top: 3rem;
+        left: 3rem;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .calltext h1{
+        font-size: 1.5rem;
+        padding: 5px;
+        font-weight: 900;
+    } 
+    .intro{
+        height: 60vh;
+        width: auto;
+        display: flex;
+        padding: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 993px) {
     .searchbar {
       top: .5rem;
@@ -146,7 +286,6 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #716262;
       }
       
       .callToAction button{
@@ -156,9 +295,9 @@ nav{
           width: 15rem;
           border-radius: 10px;
           font-size: x-large;
-          position: absolute;
           bottom: 5rem;
           left: auto;
+          cursor: pointer;
       }
   }
   @media only screen and (max-width: 570px) {
@@ -171,7 +310,6 @@ nav{
         width: 4rem;
         background: none;
         border: none;
-        position: absolute;
         left: 11rem;
         top: -.135rem;
         color: var(--textcolor);
@@ -192,19 +330,18 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #716262;
       }
       
       .callToAction button{
           background-color: var(--color1);
           color: var(--textcolor);
-          height: 4rem;
-          width: 15rem;
+          height: 2rem;
+          width: 10rem;
           border-radius: 10px;
-          font-size: x-large;
-          position: absolute;
+          font-size: medium;
           bottom: 3rem;
           left: auto;
+          cursor: pointer;
       }
       .sidebar{
         width: 100%;
@@ -261,7 +398,6 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #716262;
       }
       
       .callToAction button{
@@ -271,9 +407,9 @@ nav{
           width: 15rem;
           border-radius: 10px;
           font-size: x-large;
-          position: absolute;
           bottom: 1rem;
           left: auto;
+          cursor: pointer;
       }
       .sidebar{
         position: fixed;
@@ -303,6 +439,11 @@ nav{
         color: var(--color3);
         transition: .3s ease-in-out;
     }
+  }
+
+  button:hover{
+    background-color: var(--color3);
+    transition: .4s ease-in-out;
   }
 
 /* -----------companies---------  */
