@@ -117,10 +117,6 @@ nav{
     font-size: x-large;
     cursor: pointer;
 }
-.callToAction button:hover{
-    background-color: ;
-}   
-
 
 .calltext{
     position: absolute;
