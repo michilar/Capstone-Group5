@@ -319,7 +319,8 @@ video {
     cursor: pointer;
   }
   .sidebar {
-    width: 100%;
+    width: 100vw;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,7 +329,7 @@ video {
     background-color: #ffffff;
     border-radius: 4px;
     left: 0;
-    bottom: 0;
+    margin-top: 18rem;
     box-shadow: 1px 1px 5px var(--color3);
   }
   .sidebar ul {
@@ -351,7 +352,10 @@ video {
     transition: 0.3s ease-in-out;
   }
 }
-@media only screen and (max-width: 355px) {
+@media only screen and (max-width: 385px) {
+  .intro{
+    margin-bottom: 5rem;
+  }
   #searchButton {
     display: none;
   }
@@ -376,21 +380,26 @@ video {
   .callToAction button {
     background-color: var(--color1);
     color: var(--textcolor);
-    height: 4rem;
-    width: 15rem;
+    height: 2rem;
+    width: 10rem;
     border-radius: 10px;
-    font-size: x-large;
+    font-size: medium;
     bottom: 1rem;
     left: auto;
     cursor: pointer;
   }
   .sidebar {
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     z-index: 3;
     background-color: #ffffff;
     border-radius: 4px;
-    left: 5px;
-    bottom: 0;
+    box-shadow: 1px 1px 5px var(--color3);
+    margin-top: 18rem;
   }
   .sidebar ul {
     display: flex;
@@ -403,9 +412,9 @@ video {
     cursor: pointer;
   }
   .sidebar i {
-    font-size: xx-large;
+    font-size: x-large;
     text-decoration: none;
-    padding: 1rem;
+
   }
   .sidebar a:hover {
     color: var(--color3);
@@ -650,6 +659,7 @@ h5 {
 footer {
   background-color: #171e2a;
   color: #fff;
+  padding-bottom: 2rem;
 }
 
 .footer-container {
@@ -662,7 +672,7 @@ footer {
 }
 
 .contact-info .info {
-  min-width: 400px;
+  width: auto;
 }
 
 .solutions-header {
