@@ -354,7 +354,7 @@ video {
 }
 @media only screen and (max-width: 385px) {
   .intro{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   #searchButton {
     display: none;
@@ -399,7 +399,7 @@ video {
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 1px 1px 5px var(--color3);
-    margin-top: 18rem;
+    margin-top: 23rem;
   }
   .sidebar ul {
     display: flex;
