@@ -9,13 +9,12 @@
   --textcolor: #ffffff;
 }
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Flow Circular', cursive;
-font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Flow Circular", cursive;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---nav bar -------------------------------  */
@@ -89,8 +88,8 @@ nav {
   background-color: var(--color1);
   border-radius: 10px;
   color: var(--textcolor);
-  padding-left: 1rem;
 }
+
 #searchButton {
   width: 5rem;
   background: none;
@@ -102,6 +101,43 @@ nav {
   cursor: pointer;
 }
 
+.group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: absolute;
+  max-width: 190px;
+  z-index: 4;
+  left: 10rem;
+  top: 5rem;
+}
+
+.group .input {
+  width: 45rem;
+  height: 3rem;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  color: var(--textcolor);
+  background-color: var(--color1);
+  transition: 0.3s ease;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
 .callToAction {
   height: 93vh;
   width: 100vw;
@@ -109,6 +145,7 @@ nav {
   display: flex;
   z-index: -1;
 }
+
 .callToAction button {
   background-color: var(--color1);
   color: var(--textcolor);
@@ -137,15 +174,59 @@ nav {
   padding: 0;
   padding-bottom: 2rem;
 }
+.calltext1 {
+  position: absolute;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  top: 10rem;
+  left: 20rem;
+  justify-content: center;
+  align-items: flex-start;
+}
 .calltext h1 {
   font-size: 4rem;
   padding: 5px;
   font-weight: 700;
 }
+.calltext1 h1 {
+  font-size: 4rem;
+  padding: 5px;
+  font-weight: 700;
+}
+.calltext1 .hero-title {
+  color: #1c3fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 32px;
+}
 video {
   width: 90vw;
   height: auto;
 }
+
+.callimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 55rem;
+  padding-bottom: 7rem;
+}
+
+.callimg img {
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .calltext1 {
+    top: 10rem;
+    left: 12rem;
+  }
+  .callimg {
+    padding-left: 45rem;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   .calltext {
     position: absolute;
@@ -161,7 +242,26 @@ video {
     width: 100%;
     height: auto;
   }
+  .callimg {
+    padding: 0 0 4rem 45rem;
+  }
 }
+
+@media only screen and (max-width: 1145px) {
+  .calltext1 {
+    left: 8rem;
+  }
+  .callimg {
+    padding-left: 40rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .callimg img {
+    width: 300px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .calltext {
     position: absolute;
@@ -199,6 +299,16 @@ video {
     padding: 5px;
     font-weight: 900;
   }
+  .calltext1 {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    top: 5rem;
+    left: 6rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
   video {
     width: 80%;
     height: auto;
@@ -226,6 +336,16 @@ video {
     font-size: 1.5rem;
     padding: 5px;
     font-weight: 900;
+  }
+  .calltext1 {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    top: 3rem;
+    left: 3rem;
+    justify-content: center;
+    align-items: flex-start;
   }
   .intro {
     height: 60vh;
@@ -278,6 +398,10 @@ video {
     bottom: 5rem;
     left: auto;
     cursor: pointer;
+  }
+  .callimg {
+    padding-top: 11rem;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 570px) {
@@ -450,6 +574,12 @@ button:hover {
   width: 12rem;
   padding: 2rem;
 }
+
+.company1 {
+  margin-top: 0;
+  margin-bottom: 300px;
+}
+
 @media screen and (max-width: 700px) {
   .companyLogo {
     height: 5rem;
@@ -712,8 +842,8 @@ footer {
 }
 
 .fa-brands:hover {
-    color: #1c3fff;
-    transform: rotate(10deg) scale(1.1);
+  color: #1c3fff;
+  transform: rotate(10deg) scale(1.1);
 }
 
 .footer-bottom {
