@@ -240,6 +240,14 @@ video {
   .callimg {
     padding: 0 0 4rem 45rem;
   }
+  .portfolio-card {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25rem;
+  }
 }
 
 @media only screen and (max-width: 1145px) {
@@ -477,7 +485,7 @@ video {
   }
 }
 @media only screen and (max-width: 385px) {
-  .intro{
+  .intro {
     margin-bottom: 2rem;
   }
   #searchButton {
@@ -538,14 +546,12 @@ video {
   .sidebar i {
     font-size: x-large;
     text-decoration: none;
-
   }
   .sidebar a:hover {
     color: var(--color3);
     transition: 0.3s ease-in-out;
   }
 }
-
 button:hover {
   background-color: var(--color3);
   transition: 0.4s ease-in-out;
@@ -783,6 +789,77 @@ h5 {
   color: var(--textcolor);
   font-weight: 500;
   border: none;
+}
+
+/* Portfolio */
+.portfolio-card {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  background-color: var(--color1);
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #100a886b;
+}
+
+.card .card-border-top {
+  width: 60%;
+  height: 3%;
+  background-color: var(--color2);
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.card .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.card .img {
+  width: 70px;
+  height: 80px;
+  background: #6b64f3;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.card button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color: var(--color2);
+  color: white;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+}
+
+.card button:hover {
+  background-color: var(--color3);
 }
 
 /* Footer */
