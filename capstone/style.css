@@ -840,7 +840,7 @@ h5 {
   font-size: 12px;
 }
 
-.card .img {
+.card img {
   width: 70px;
   height: 80px;
   background: #6b64f3;
@@ -944,95 +944,4 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
   }
-}
-
-/* Couses */
-
-.game-main-container {
-  background-color: #f2f2f2;
-  margin-top: 5rem;
-}
-
-.container-game {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-.card-game {
-  width: 300px;
-  height: 360px;
-  border-radius: 20px;
-  background: #f5f5f5;
-  position: relative;
-  padding: 1.5rem;
-  border: 2px solid #c3c6ce;
-  transition: 0.5s ease-out;
-  margin: 20px auto 40px;
-  overflow: visible;
-}
-
-.card-details {
-  color: black;
-  height: 100%;
-  gap: 2px;
-  display: grid;
-  /* place-content: center; */
-  overflow: hidden;
-}
-
-.card-details img {
-  width: 120%;
-  padding-right: 2.9rem;
-  transition: all 0.5s ease-in-out;
-}
-
-.card-details img:hover {
-  transform: scale(1.1);
-}
-
-.card-button {
-  transform: translate(-50%, 125%);
-  width: 65%;
-  border-radius: 1rem;
-  border: none;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: #fff;
-  font-size: 1.1rem;
-  padding: 0.8rem 1rem;
-  position: absolute;
-  letter-spacing: 2px;
-  left: 50%;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-}
-
-.text-body {
-  color: rgb(134, 134, 134);
-  padding-bottom: 0.9rem;
-  font-size: 0.8rem;
-}
-
-/*Text*/
-
-.text-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #1e1e1e;
-  letter-spacing: 4px;
-  padding-top: 0.5rem;
-}
-
-/*Hover*/
-
-.card-game:hover {
-  border-color: #03045e;
-  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card-game:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
 }

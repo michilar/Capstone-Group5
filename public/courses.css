@@ -1,0 +1,36 @@
+
+
+
+
+.checked {
+  color: orange;
+  margin-bottom: 1rem;
+}
+
+.p-text p {
+  font-style: italic;
+}
+
+.topics{
+  padding: 50px 0;
+  width: 80%;
+  margin: auto;
+}
+.category{
+  padding-top: 25px;
+  display: grid;
+  grid-template-areas: 
+  'dev business it design'
+  ;
+}
+.development{
+  grid-area: dev;
+}
+.students{
+  font-size: 15px;
+  color: grey;
+}
+
+.courseimg{
+    width: 100%;
+}
