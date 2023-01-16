@@ -13,6 +13,10 @@ exports.profile = (req, res) => {
     console.log(req.body);
 };
 
+exports.discussion = (req, res) => {
+    console.log(req.body);
+};
+
 exports.hw = (req, res) => {
     console.log(req.body);
 };
