@@ -54,6 +54,8 @@ app.use('/', require('./routes/pages.js'));
 app.use('/auth', require('./routes/auth'));
 
 
+const port = process.env.PORT || 5000;
+
 app.listen(5000, () =>{
     console.log("server started at port 5000")
 })
