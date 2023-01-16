@@ -18,5 +18,10 @@ router.get('/hw', (req, res)=>{
     res.render('hw');
 });
 
+router.get('/discussion', (req, res)=>{
+    res.render('discussion');
+});
+
+
 
 module.exports = router;
