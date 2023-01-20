@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp and Login</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="/profile.css">
+    <link rel="stylesheet" href="/login.css">
+	<link rel="stylesheet" href="/courses.css">
+
+
+</head>
+<body>
+ <!-- ---navbar---  -->
+ <nav class="navbar navbar-expand-lg">
+	<a class="navbar-brand bg-light" href="/"><img src="../Pictures/logo.png" alt="" id="logo"></a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon navbar-dark"></span>
+	</button>
+	<div class="collapse navbar-collapse"  id="navbarNav" >
+	  <ul class="navbar-nav">
+		<li class="nav-item active">
+		  <a class="nav-link" href="/">HOME</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/hw">ABOUT US</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/discussion">DISCUSSION</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/profile">COURSES</a>
+		</li>
+		<li class="userlog">
+		  <a class="nav-link" href="/login">LOGIN</a>
+		</li>
+	  </ul>
+	</div>
+  </nav>
+
+  <!-- end navbar  -->
+  {{!-- lets start  --}}
+
+  <!-- Lets Start Learning -->
+
+  <section class="container-fluid m-2">
+    <h2>Let's start learning!</h2>
+    <p>Choose from 204,000 online video courses with new additions published every month.
+    </p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://img-c.udemycdn.com/course/480x270/2776760_f176_10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title p-0">Python Development</h5>
+                <div class="card-text">
+                <div>Laila Manalo</div>
+                <br>
+                ₱4,499.00
+                <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div><a href="#" class="btn btn-primary">Learn more</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://img-c.udemycdn.com/course/480x270/968750_196b_7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title p-0">UI/UX Design</h5>
+              <div class="card-text">
+                <div>Laila Manalo</div>
+                <br>
+                ₱4,499.00
+                <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div><a href="#" class="btn btn-primary">Learn more</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://img-c.udemycdn.com/course/480x270/4900166_73e5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title p-0">GitHub Actions</h5>
+              <div class="card-text">
+                <div>Laila Manalo</div>
+                <br>
+                ₱4,499.00
+                <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div><a href="#" class="btn btn-primary">Learn more</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" style="width: 18rem;">
+            <img src="https://cdn.hackr.io/uploads/posts/large/1605614362YhJpBcpdI1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title p-0">React Development</h5>
+              <div class="card-text">
+                <div>Laila Manalo</div>
+                <br>
+                ₱4,499.00
+                <br>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div><a href="#" class="btn btn-primary">Learn more</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+<!-- Featured -->
+
+<div class="container-fluid bg-secondary topics pt-3">
+  <h2>Featured Topics by Category</h2>
+  <div class="category d-flex justify-content-around">
+      <div class="development">
+          <h3>Development</h3>
+          <ul>
+              <li>
+                  <a href="#"><h4>Python</h4></a>
+                  <p class="students">36,354,994 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>Web Development</h4></a>
+                  <p class="students">11,415,615 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>Machine Learning</h4></a>
+                  <p class="students">7,070,015 students</p>
+              </li>
+          </ul>
+      </div>
+      <div class="business">
+          <h3>Business</h3>
+          <ul>
+              <li>
+                  <a href="#"><h4>Financial Analyst</h4></a>
+                  <p class="students">1,195,282 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>SQL</h4></a>
+                  <p class="students">5,977,561 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>PMP</h4></a>
+                  <p class="students">1,733,398 students</p>
+              </li>
+          </ul>
+      </div>
+      <div class="software">
+          <h3>IT and Software</h3>
+          <ul>
+              <li>
+                  <a href="#"><h4>AWS Certification</h4></a>
+                  <p class="students">6,078,244 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>Ethical Hacking</h4></a>
+                  <p class="students">10,931,066 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>Cyber Security</h4></a>
+                  <p class="students">3,998,037 students</p>
+              </li>
+          </ul>
+      </div>
+      <div class="design">
+          <h3>Design</h3>
+          <ul>
+              <li>
+                  <a href="#"><h4>Photoshop</h4></a>
+                  <p class="students">10,909,736 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>Graphic Design</h4></a>
+                  <p class="students">3,381,052 students</p>
+              </li>
+              <li>
+                  <a href="#"><h4>Drawing</h4></a>
+                  <p class="students">2,410,849 students</p>
+              </li>
+          </ul>
+      </div>
+  </div>
+  <a href="#"><input class="m-3" type="button" name="explore" id="explore" value="Explore more Topics"></a>
+</div>
+ <!-- Typing games start -->
+
+    <div class="game-main-container gameSec">
+		<h1 class="font-weight-bold"">EDUCATIONAL  GAMES</h1>
+      <div class="container-game gap-2">
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/memorygame4.JPEG"
+              alt="Science Quiz"
+              height="175"
+            />
+            <p class="text-title">Fruit Memory Game</p>
+            <p class="text-body">
+              The purpose of this memory game is to make pairs of cards by
+              turning them over 2 by 2.
+            </p>
+          </div>
+          <a href="./Games/Memory game/memorygame.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/addition.png"
+              alt="Typing Games"
+              height="175"
+            />
+            <p class="text-title">Adding Ninja</p>
+            <p class="text-body">
+              This game helps you learn new techniques about addition.
+            </p>
+          </div>
+          <a href="./Games/Addition/math-addition.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/typing-test-2.jpg"
+              alt="Typing Games"
+              height="175"
+            />
+            <p class="text-title">Rapid Typing</p>
+            <p class="text-body">
+              The app starts with basic lessons where you have to type
+              paragraphs.
+            </p>
+          </div>
+          <a href="./Games/Typing Test/Typing.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/history.png"
+              alt="Typing Games"
+              height="175"
+            />
+            <p class="text-title">Our History</p>
+            <p class="text-body">
+              This game helps you learn about our history.
+            </p>
+          </div>
+          <a href="./Games/History_Quiz/History.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/math-2.png"
+              alt="Typing Games"
+              height="175"
+            />
+            <p class="text-title">EZ Math</p>
+            <p class="text-body">
+              This game where you need to type the correct answer to move ahead
+            </p>
+          </div>
+          <a href="./Games/Math game 2/math2.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+
+        <div class="card-game">
+          <div class="card-details">
+            <img src="../Pictures/games/english-quiz.png" alt="English Quiz" />
+            <p class="text-title">Mini Quiz</p>
+            <p class="text-body">
+              A general knowledge quiz tests quiz-takers knowledge on a
+              particular topic.
+            </p>
+          </div>
+          <a href="./Games/Mini Quiz App/mini-quiz.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/Food and safety 3.jpg"
+              alt="Science Quiz"
+              height="175"
+            />
+            <p class="text-title">Food & Safety</p>
+            <p class="text-body">
+              This app will teach pupils food safety steps with these coloring
+              pages.
+            </p>
+          </div>
+          <a href="./Games/Food-Safety/Food-Safety.html">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+
+        <div class="card-game">
+          <div class="card-details">
+            <img
+              src="../Pictures/games/english-quiz-2.png"
+              alt="English Quiz"
+              height="175"
+            />
+            <p class="text-title">English Grammar</p>
+            <p class="text-body">
+              The app is initiated for kids of all types with problems aimed at
+              developing Noun, pronoun, verb, and adjective.
+            </p>
+          </div>
+          <a href="#">
+            <button class="card-button">Play Now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end of typing games -->
+
+    <!-- Footer start -->
+    <footer>
+      <!-- -----caLL action 2---  -->
+      <div class="container call2">
+        <h3>START FOR FREE</h3>
+        <h2 class="text-black fw-normal">
+          Co. Education is everything you need to learn new skills
+        </h2>
+        <button class="call2btn">SCHEDULE A DEMO</button>
+      </div>
+      <div class="footer-container py-4 px-5 m-auto">
+        <div
+          class="footer-content d-flex justify-content-between align-items-center justify-content-md-start"
+        >
+          <div class="profile">
+            <div class="question-title">
+              <h3 class="question">Any Questions?</h3>
+            </div>
+            <div class="footer-desc mb-5 fw-light">
+              <p>
+                We are available online 24/7, and over the phone 5 days a week.
+              </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-10">
+                <div class="row mb-4">
+                  <div class="contact-icon col-lg-3 col-3">
+                    <div class="rounded-circle bg-dark py-3 mb-1 text-center">
+                      <span class="material-symbols-outlined text-white">
+                        call
+                      </span>
+                    </div>
+                  </div>
+                  <ul class="contact-info col-lg-9 col-9 list-unstyled">
+                    <li class="h5">Call Us</li>
+                    <li class="info text-secondary">(123)-456-7890</li>
+                  </ul>
+                </div>
+                <div class="row mb-4">
+                  <div class="contact-icon col-lg-3 col-3">
+                    <div class="rounded-circle bg-dark py-3 mb-1 text-center">
+                      <span class="material-symbols-outlined text-white"
+                        >mail</span
+                      >
+                    </div>
+                  </div>
+                  <ul class="contact-info col-lg-9 col-9 list-unstyled">
+                    <li class="h5">Email Us</li>
+                    <li class="text-secondary">name@gmail.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="solutions-area d-flex justify-content-md-start">
+            <ul class="solutions-header list-unstyled">
+              <li class="solutions-name">Solutions</li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Estimates</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Customer Columns</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Inventory</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Payments</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Workflow</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Empower Techs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Team Management</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Track Profit</a
+                >
+              </li>
+            </ul>
+            <ul class="solutions-header list-unstyled">
+              <li class="solutions-name">Shops</li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >General Repair</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Heavy Duty</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Wrap and Detail</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Other</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Single Location</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Multi Location</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Enterprise</a
+                >
+              </li>
+            </ul>
+            <ul class="solutions-header list-unstyled">
+              <li class="solutions-name">Resources</li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Customer Stories</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Integrations</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Pricing</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Switching</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Webinars</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >What's New</a
+                >
+              </li>
+            </ul>
+            <ul class="solutions-header list-unstyled">
+              <li class="solutions-name">Company</li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Partnerships</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white fw-light"
+                  >Pricing</a
+                >
+              </li>
+              <div class="solutions-header list-unstyled">
+                <p class="follow-name">Follow us!</p>
+                <div class="socialmedia d-flex justify-content-between">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex justify-content-between">
+          <div class="copyright">
+            <small>&copy; 2022, Shopmonkey, Inc. All rights reserved.</small>
+          </div>
+          <div class="privacy">
+            <a href="#" class="text-decoration-none text-white"
+              >Privacy Policy</a
+            >
+          </div>
+          <div class="toc">
+            <a href="#" class="text-decoration-none text-white"
+              >Terms & Conditions</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+  </body>
+</html>
